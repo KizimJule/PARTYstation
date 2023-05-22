@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="/slider/itc-slider.js" defer></script>
+    <script src="/js/video.js" defer></script>
+    <script src="/js/selection-slider.js" defer></script>
+    <script src="/js/many_sliders-1.js"></script>
+
+    <title>PARTYstation</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container container_header">
+        <a href="#" class="logo">
+          <img src="img/logo.svg" alt="logo" />
+        </a>
+
+        <button class="menu-mobile">
+          <img src="img/menu.svg" alt="mobile-menu" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container container_hero">
+          <hi class="hero__title">
+            <span class="hero__title_accent">Лучшие</span> игры <br />
+            со всего мира</hi
+          >
+
+          <p class="hero__text">
+            Каждую пятницу новая порция. <br />Подписка за
+            <span class="hero__text_accent">399 ₽</span> в месяц
+          </p>
+          <img class="hero__img_1" src="img/yellow-xz.png" alt="planet" />
+          <img class="hero__img_2" src="img/blue-xz.png" alt="planet" />
+
+          <form class="hero__form">
+            <label class="hero__form_label" for="\">
+              <input
+                class="hero__form_input"
+                placeholder="Введите email"
+                type="email"
+                name="email"
+              />
+            </label>
+            <button class="hero__form_btn" type="submit">
+              <img
+                src="img/hero-submit.svg"
+                alt="submit"
+                width="16"
+                height="16"
+              />
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="hero-slider">
+        <div class="container_slideshow">
+          <div
+            class="itc-slider"
+            data-autoplay="true"
+            data-interval="3500"
+            data-loop="true"
+            data-slider="itc-slider"
+          >
+            <div class="itc-slider__wrapper">
+              <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/slider-img/Svintus_NEON.jpg"
+                      alt="Svintus_NEON"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="itc-slider__deskr">
+                    <h3 class="heading-h3">Свинтус NEON</h3>
+                    <p class="itc-slider__deskr_text">
+                      Весёлая и быстрая карточная игра для любой компании
+                    </p>
+                  </div>
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/slider-img/Kviz-logika.jpg"
+                      alt="Kviz-logika"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="itc-slider__deskr">
+                    <h3 class="heading-h3">Квиз Логика</h3>
+                    <p class="itc-slider__deskr_text">
+                      Настольное развлечение для детей и взрослых
+                    </p>
+                  </div>
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/slider-img/true-action.jpg"
+                      alt="true-action"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="itc-slider__deskr">
+                    <h3 class="heading-h3">Правда или действие</h3>
+                    <p class="itc-slider__deskr_text">
+                      Всё будет основано только на вашей жизни и фактах из неё
+                    </p>
+                  </div>
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/slider-img/Imaginarium.jpg"
+                      alt="Imaginarium"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="itc-slider__deskr">
+                    <h3 class="heading-h3">Имаджинариум</h3>
+                    <p class="itc-slider__deskr_text">
+                      Вам понадобится вся ваша фантазия и эмпатия
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button> -->
+            <ol class="itc-slider__indicators">
+              <li class="itc-slider__indicator" data-slide-to="0"></li>
+              <li class="itc-slider__indicator" data-slide-to="1"></li>
+              <li class="itc-slider__indicator" data-slide-to="2"></li>
+              <li class="itc-slider__indicator" data-slide-to="3"></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <video class="video__box" autoplay loop>
+          <source
+            src="video/coverr-couple-relaxing-on-a-couch-8000-1080p.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="video/coverr-couple-relaxing-on-a-couch-8000-1080p.webm"
+            type="video/webm"
+          />
+        </video>
+      </section>
+
+      <section class="play-together">
+        <div class="container">
+          <div class="btn-grad">
+            <button class="btn-transparent">Играйте вместе</button>
+          </div>
+          <h2 class="heading-h2">
+            Partystation — новый способ развлечений для любой компании
+          </h2>
+
+          <div
+            class="itc-slider"
+            data-autoplay="true"
+            data-interval="3500"
+            data-loop="true"
+            data-slider="itc-slider"
+          >
+            <div class="itc-slider__wrapper itc-slider__wrapper_width">
+              <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                  <div class="elips"></div>
+
+                  <div class="play-together__text-box">
+                    <p class="play-together__text">
+                      Собери друзей перед экраном ТВ и можно начинать вечеринку!
+                    </p>
+                  </div>
+                  <p class="count">01</p>
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="elips"></div>
+
+                  <div class="play-together__text-box">
+                    <p class="play-together__text">
+                      Подключайте смартфоны к телевизору одним нажатием
+                    </p>
+                  </div>
+                  <p class="count">02</p>
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="elips"></div>
+
+                  <div class="play-together__text-box">
+                    <p class="play-together__text">
+                      Смартфоны в руках возьмут — игровые контроллеры
+                    </p>
+                  </div>
+                  <p class="count">03</p>
+                </div>
+
+                <div class="itc-slider__item itc-slider__item_4">
+                  <div class="elips elips_4"></div>
+                  <a href="#play">
+                    <p class="play-together__text play-together__text_center">
+                      Начать играть
+                    </p></a
+                  >
+                </div>
+              </div>
+            </div>
+            <ol class="itc-slider__indicators itc-slider__indicators_position">
+              <li
+                class="itc-slider__indicator itc-slider__indicator_dots"
+                data-slide-to="0"
+              ></li>
+              <li
+                class="itc-slider__indicator itc-slider__indicator_dots"
+                data-slide-to="1"
+              ></li>
+              <li
+                class="itc-slider__indicator itc-slider__indicator_dots"
+                data-slide-to="2"
+              ></li>
+              <li
+                class="itc-slider__indicator itc-slider__indicator_dots"
+                data-slide-to="3"
+              ></li>
+            </ol>
+          </div>
+
+          <div class="choose-play" id="play">
+            <h3 class="heading_h3">Где хотите начать играть?</h3>
+            <div class="choose-play__box">
+              <button type="button" class="btn-gradient">
+                <img
+                  src="img/btn-chrome-icon.png"
+                  alt="btn-chrome-icon"
+                  width="24"
+                  height="24"
+                />
+                <span>ПК</span>
+              </button>
+              <p>или</p>
+              <button type="button" class="btn-gradient">
+                <img
+                  src="img/btn-android-icon.png"
+                  alt="btn-android-icon"
+                  width="24"
+                  height="24"
+                />
+                <span>Android TV</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="selection">
+        <div class="container">
+          <div class="btn-grad btn-grad_select">
+            <button class="btn-transparent btn-transparent_select">
+              во что сыграем?
+            </button>
+          </div>
+          <h2 class="heading-h2">
+            Простые правила, быстрые и интересные партии и постоянно
+            пополняющийся каталог
+          </h2>
+
+          <!-- Container for the image gallery -->
+          <div class="selection__slider-box">
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img
+                class="mySlides__img"
+                src="img/slider-img/Svintus_NEON.jpg"
+                style="width: 100%"
+              />
+              <div class="mySlides__deskr">
+                <h3 class="heading-h3">Свинтус NEON</h3>
+                <p class="mySlides__deskr_text">
+                  Весёлая и быстрая карточная игра для любой компании, для
+                  малого и большого количества игроков
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img
+                class="mySlides__img"
+                src="img/slider-img/Imaginarium.jpg"
+                style="width: 100%"
+                loading="lazy"
+              />
+              <div class="mySlides__deskr">
+                <h3 class="heading-h3">Имаджинариум</h3>
+                <p class="mySlides__deskr_text">
+                  Вам понадобится вся ваша фантазия и эмпатия
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img
+                class="mySlides__img"
+                src="img/slider-img/Kviz-logika.jpg"
+                style="width: 100%"
+              />
+              <div class="mySlides__deskr">
+                <h3 class="heading-h3">Квиз Логика</h3>
+                <p class="mySlides__deskr_text">
+                  Настольное развлечение для детей и взрослых
+                </p>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img
+                class="mySlides__img"
+                src="img/slider-img/true-action.jpg"
+                style="width: 100%"
+              />
+              <div class="mySlides__deskr">
+                <h3 class="heading-h3">Правда или действие</h3>
+                <p class="mySlides__deskr_text">
+                  Всё будет основано только на вашей жизни и фактах из неё
+                </p>
+              </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)"
+              ><img src="img/arrow.svg" alt="arrow"
+            /></a>
+            <a class="next" onclick="plusSlides(1)"
+              ><img src="img/arrow.svg" alt="arrow"
+            /></a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column cursor" onclick="currentSlide(1)">
+                <div class="mySlides__deskr_mini">
+                  <h3 class="heading-h3">Свинтус NEON</h3>
+                  <p class="mySlides__deskr_text">Хрю-киберпанк наступил</p>
+                </div>
+                <img
+                  class="demo cursor"
+                  src="img/BigSlider/bigSlider__photo1.png"
+                  onclick="currentSlide(1)"
+                  alt="Svintus_NEON"
+                  width="72"
+                />
+              </div>
+              <div class="column cursor" onclick="currentSlide(2)">
+                <div class="mySlides__deskr_mini">
+                  <h3 class="heading-h3">Имаджинариум</h3>
+                  <p class="mySlides__deskr_text">Карты и ассоциации</p>
+                </div>
+                <img
+                  class="demo cursor"
+                  src="img/BigSlider/bigSlider__photo2.png"
+                  onclick="currentSlide(2)"
+                  alt="Imaginarium"
+                />
+              </div>
+
+              <div class="column cursor" onclick="currentSlide(2)">
+                <div class="mySlides__deskr_mini">
+                  <h3 class="heading-h3">Квиз Логика</h3>
+                  <p class="mySlides__deskr_text">Карты и ассоциации</p>
+                </div>
+                <img
+                  class="demo cursor"
+                  src="img/BigSlider/bigSlider__photo3.png"
+                  onclick="currentSlide(3)"
+                  alt="Kviz-logika"
+                />
+              </div>
+
+              <div class="column cursor" onclick="currentSlide(4)">
+                <div class="mySlides__deskr_mini">
+                  <h3 class="heading-h3">Правда или действие</h3>
+                  <p class="mySlides__deskr_text">Ваша жизнь и факты</p>
+                </div>
+                <img
+                  class="demo cursor"
+                  src="img/BigSlider/bigSlider__photo4.png"
+                  onclick="currentSlide(4)"
+                  alt="true-action"
+                />
+              </div>
+              <ol
+                class="itc-slider__indicators itc-slider__indicators_position"
+              >
+                <li
+                  class="itc-slider__indicator itc-slider__indicator_dots"
+                  data-slide-to="0"
+                ></li>
+                <li
+                  class="itc-slider__indicator itc-slider__indicator_dots"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  class="itc-slider__indicator itc-slider__indicator_dots"
+                  data-slide-to="2"
+                ></li>
+                <li
+                  class="itc-slider__indicator itc-slider__indicator_dots"
+                  data-slide-to="3"
+                ></li>
+              </ol>
+            </div>
+            <div class="section__bg-gradient"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container container_catalog">
+          <div class="catalog__slider-box">
+            <h2 class="heading-h2 heading-h2_margin">Новинки</h2>
+
+ <div
+            class="itc-slider"
+            data-autoplay="true"
+            data-interval="3500"
+            data-loop="true"
+            data-slider="itc-slider"
+          >
+            <div class="itc-slider__wrapper">
+              <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/ManySlides/firstColumn1/1.png"
+                      alt="slide1"
+                      loading="lazy"
+                    />
+                  </div>
+                
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/ManySlides/firstColumn1/2.png"
+                      alt="slide2"
+                      loading="lazy"
+                    />
+                  </div>
+                 
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/ManySlides/firstColumn1/3.png"
+                      alt="slide3"
+                      loading="lazy"
+                    />
+                  </div>
+               
+                </div>
+
+                <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/ManySlides/firstColumn1/4.png"
+                      alt="slide4"
+                      loading="lazy"
+                    />
+                  </div>
+                 
+                </div>
+
+                 <div class="itc-slider__item">
+                  <div class="itc-slider__img-container">
+                    <img
+                      class="itc-slider__img"
+                      src="img/ManySlides/firstColumn2/3.png"
+                      alt="slide5"
+                      loading="lazy"
+                    />
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <!-- <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button> -->
+            <ol class="itc-slider__indicators">
+              <li class="itc-slider__indicator" data-slide-to="0"></li>
+              <li class="itc-slider__indicator" data-slide-to="1"></li>
+              <li class="itc-slider__indicator" data-slide-to="2"></li>
+              <li class="itc-slider__indicator" data-slide-to="3"></li>
+              <li class="itc-slider__indicator" data-slide-to="4"></li>
+            </ol>
+          </div>
+            <!-- <div class="container_slideshow">
+              <div
+                class="itc-slider"
+                data-autoplay="true"
+                data-interval="3500"
+                data-loop="true"
+                data-slider="itc-slider"
+              >
+                <div class="itc-slider__wrapper itc-slider__wrapper_width">
+                  <div class="itc-slider__items">
+                    <div class="itc-slider__item">
+                      <div class="itc-slider__img-container">
+                        <img
+                          class="itc-slider__img"
+                          src="img/ManySlides/firstColumn1/1.png"
+                          alt="slide 1"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="itc-slider__item">
+                      <div class="itc-slider__img-container">
+                        <img
+                          class="itc-slider__img"
+                          src="img/ManySlides/firstColumn1/2.png"
+                          alt="slide 2"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="itc-slider__item">
+                      <div class="itc-slider__img-container">
+                        <img
+                          class="itc-slider__img"
+                          src="img/ManySlides/firstColumn1/3.png"
+                          alt="slide 3"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="itc-slider__item">
+                      <div class="itc-slider__img-container">
+                        <img
+                          class="itc-slider__img"
+                          src="img/ManySlides/firstColumn1/4.png"
+                          alt="slide 4"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="itc-slider__item">
+                      <div class="itc-slider__img-container">
+                        <img
+                          class="itc-slider__img"
+                          src="img/ManySlides/firstColumn2/3.png"
+                          alt="slide 5"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <button class="itc-slider__btn itc-slider__btn_prev"></button>
+            <button class="itc-slider__btn itc-slider__btn_next"></button> -->
+                <ol class="itc-slider__indicators">
+                  <li class="itc-slider__indicator" data-slide-to="0"></li>
+                  <li class="itc-slider__indicator" data-slide-to="1"></li>
+                  <li class="itc-slider__indicator" data-slide-to="2"></li>
+                  <li class="itc-slider__indicator" data-slide-to="3"></li>
+                </ol>
+              </div>
+            </div> 
+
+            <div class="catalog__slider-box">
+              <h2 class="heading-h2 heading-h2_margin">Для всей семьи</h2>
+            </div>
+            <div class="catalog__slider-box">
+              <h2 class="heading-h2 heading-h2_margin">Для самых умных</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="payment">
+        <div class="container">
+          <div class="btn-grad btn-grad_payment">
+            <button class="btn-transparent btn-transparent_payment">
+              Играйте бесплатно, купите потом
+            </button>
+          </div>
+
+          <ul class="payment__list">
+            <li class="payment__item payment__item_free">
+              <h2 class="heading-h2 heading-h2_payment">Бесплатно</h2>
+              <p class="payment__item_deskr">
+                Базовая версия<br />
+                <span class="payment__item_span">с ограниченным доступом</span>
+              </p>
+              <img
+                class="payment__item_img-tree"
+                src="img/payment/Blue_tree.png"
+                alt="Blue neon tree"
+              />
+            </li>
+            <li class="payment__item payment__item_pay">
+              <h2 class="heading-h2 heading-h2_payment">399 руб/месяц</h2>
+              <p class="payment__item_deskr">
+                Премиум версия<br />
+                <span class="payment__item_span">с полным доступом</span>
+              </p>
+              <img
+                class="payment__item_img-star"
+                src="img/payment/Yelloy_star.png"
+                alt="Yelloy neon star"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="opportunities">
+        <div class="container">
+          <div class="btn-grad btn-grad_opportunities">
+            <button class="btn-transparent btn-transparent_opportunities">
+              Возможности платформы
+            </button>
+          </div>
+
+          <div class="slide">
+            <h2 class="heading-h2 heading-h2_opportunities">
+              Можно играть <br />на
+              <span class="heading-h2_span">Smart-tv</span> или
+              <span class="heading-h2_span">PC</span>
+            </h2>
+            <p class="opport_text">
+              Собери друзей перед экраном ТВ и можно начинать вечеринку!
+            </p>
+            <button type="button" class="btn-gradient btn-gradient_small">
+              Начать играть
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

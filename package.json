@@ -1,0 +1,22 @@
+{
+  "name": "partystation",
+  "version": "1.0.0",
+  "description": "sass –watch index.scss index.css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KizimJule/PARTYstation.git"
+  },
+  "author": "Julia Kuzum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KizimJule/PARTYstation/issues"
+  },
+  "homepage": "https://github.com/KizimJule/PARTYstation#readme",
+  "dependencies": {
+    "swiper": "^9.3.2"
+  }
+}

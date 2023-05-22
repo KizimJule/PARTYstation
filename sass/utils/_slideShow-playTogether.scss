@@ -1,0 +1,51 @@
+.itc-slider__wrapper_width {
+  width: 328px;
+  height: 328px;
+  margin: 0 auto;
+}
+
+.itc-slider__indicators_position {
+  bottom: -48px;
+}
+
+.elips {
+  border-radius: 50%;
+  background: linear-gradient(
+    136deg,
+    rgba(20, 6, 61, 1) 44%,
+    rgba(128, 11, 245, 0.6) 114%
+  );
+  width: 328px;
+  height: 328px;
+
+  &_4 {
+    background: linear-gradient(90deg, #800bf5 26.67%, #25c6f9 97.33%);
+    z-index: -10;
+
+  }
+}
+
+.count {
+  font-family: "Russo One", sans-serif;
+  font-size: 80px;
+  line-height: 100%;
+  color: $color-dark;
+  position: absolute;
+  left: 120px;
+  bottom: -19px;
+}
+
+.play-together__text_center {
+  z-index: 10;
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: $color-white;
+transition: all .5s;
+
+  &:hover, &:focus{
+     transform: translate(-50%, -50%) scale(1.3);
+    }
+}

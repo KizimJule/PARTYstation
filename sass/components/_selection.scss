@@ -1,0 +1,130 @@
+.selection {
+  padding-bottom: 104px;
+}
+.section__bg-gradient {
+  position: absolute;
+  background: #800bf5;
+  filter: blur(150px);
+  border-radius: 70%;
+  width: 357px;
+  height: 250px;
+  bottom: 0;
+  left: -130px;
+  z-index: -20;
+}
+.selection__slider-box {
+  margin-top: 56px;
+  position: relative;
+}
+.mySlides__deskr {
+  padding: 24px;
+  border-radius: 26px;
+  background-color: $color-dark;
+}
+.mySlides__deskr_mini {
+  display: none;
+}
+.mySlides__img {
+  border-radius: 26px;
+  width: 326px;
+  height: 200px;
+}
+.mySlides__deskr_text {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.selection__slider-box {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 48px;
+  height: 48px;
+  // padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $color-blue;
+}
+.prev img {
+  transform: rotate(180deg);
+}
+/* Position the "next button" to the right */
+.next {
+  right: 16px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: $color-purple;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  //   width: 16.66%;
+  width: calc(100% / 4);
+  //   display: flex;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

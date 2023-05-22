@@ -1,0 +1,29 @@
+.play-together {
+  padding: 0 0 64px;
+
+  &__text-box {
+    max-width: 256px;
+    position: absolute;
+    top: 88px;
+    z-index: 10;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}
+
+.choose-play {
+  margin-top: 84px;
+  &__box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.heading_h3 {
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 32px;
+}
+
