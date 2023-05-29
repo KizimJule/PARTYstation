@@ -1,0 +1,30 @@
+.slider-container {
+  position: relative;
+  overflow-x: hidden;
+  height: 140px;
+  @media screen and (min-width: 768px) {
+    height: 216px;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 200px;
+  }
+}
+.sliders {
+  display: flex;
+  width: 100%;
+
+  gap: 8px;
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    gap: 24px;
+  }
+}
+
+.slider {
+  // min-width: 100%;
+}
+
+.slide-controls {
+}

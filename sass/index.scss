@@ -2,6 +2,14 @@
 @import "base/topography";
 @import "base/common";
 
+@import "utils/slideshow";
+@import "utils/button";
+@import "utils/slideShow-playTogether";
+@import "utils/many-slider_1";
+@import "utils/many-slider_2";
+@import "utils/many-slider_3";
+@import "utils/catalog-slider-carusel";
+
 @import "components/header";
 @import "components/hero";
 @import "components/video";
@@ -11,7 +19,4 @@
 @import "components/payment";
 @import "components/opportunities";
 
-@import "utils/slideshow";
-@import "utils/button";
-@import "utils/slideShow-playTogether";
-@import "utils/many-slider_1";
+
